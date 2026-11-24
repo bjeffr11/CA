@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calendario de Adviento 🎄</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- casa.css va DESPUÉS de style.css: pone la casita de jengibre y ordena las puertas -->
+  <link rel="stylesheet" href="casa.css">
+</head>
+<body>
+  <div class="luces" aria-hidden="true"></div>
+  <div id="nieve" aria-hidden="true"></div>
+
+  <header>
+    <h1>Calendario de Adviento</h1>
+    <p id="saludo"></p>
+    <p id="contador"></p>
+    <!-- conteo.js escribe aquí la cuenta regresiva a la próxima puerta -->
+    <p id="proxima"></p>
+  </header>
+
+  <div class="casa">
+    <div class="tejado" aria-hidden="true"></div>
+    <div class="paredes">
+      <!-- JavaScript crea aquí las 24 puertitas -->
+      <main id="calendario"></main>
+    </div>
+    <span class="estrella" aria-hidden="true">⭐</span>
+    <div class="suelo" aria-hidden="true"><span>🎄</span><span>🎁</span><span>⛄</span><span>🎁</span><span>🎄</span></div>
+  </div>
+
+  <dialog id="ventana">
+    <button id="cerrar" aria-label="Cerrar">✕</button>
+    <div id="emoji"></div>
+    <h2 id="titulo"></h2>
+    <p id="texto"></p>
+    <a id="enlace" target="_blank" rel="noopener"></a>
+  </dialog>
+
+  <script src="script.js"></script>
+  <script src="conteo.js"></script>
+</body>
+</html>
